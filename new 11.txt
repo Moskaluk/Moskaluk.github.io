@@ -1,0 +1,13 @@
+cd c:\intel
+git clone https://github.com/Moskaluk/Moskaluk.github.io.git
+cd Moskaluk.github.io
+git remote set-url origin https://Moskaluk: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@github.com/Moskaluk/Moskaluk.github.io.git
+
+
+git add .
+git commit -m "01 - Створив шаблон"
+git push
+
+---------------------------------------------------------------------------------
+https://github.com/rymar4/WebLab
+https://rymar67.github.io/
