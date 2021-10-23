@@ -143,6 +143,15 @@ for(var i=0; i<document.forms[0].length; i++){
 </table>
 <!-- ====================================== -->
 <body>
-
+<?php
+$log_path = 'log.txt';
+$user_ip = getenv(REMOTE_ADDR);
+$user_brouser = getev(HTTP_USER_AGENT);
+$curent_time = date("ymd H:i:s");
+$log_string = "$user_ip|$user_brouser|$curent_time|\r\n";
+$file = fopen($log_path,"a");
+fwrite($file, $log_string, strlen($log_string));
+fclose($file);
+?>
 </body>
 </html>
